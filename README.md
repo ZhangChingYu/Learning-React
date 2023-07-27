@@ -6,6 +6,7 @@
 1. 在vscode打開為項目準備好的空文件夾，在terminal中輸入命令 npx install create-react-app ./
 2. 等項目安裝好後將原本的src文件夾刪除，並創建一個新的文件夾，把它同樣命名為src，這裡我們要自己搭建src文件夾的內容。
 3. 在src文件夾中創建index.js文件，並輸入如下代碼：
+![indexJS](https://github.com/ZhangChingYu/Learning-React/blob/2c7b7d07933486b2939b43168e060009b4dccaa4/images/initialize_indexJS.png)
 4. 在src文件夾中創建App.js文件，並輸入如下代碼（也可以在第一行輸入rafce，並點擊Enter）：
 5. 我們嘗試加上一個標簽
 6. 現在在terminal裡輸入npm start
