@@ -118,7 +118,27 @@ import { Footer, Blog, Possibility, Features, WhatGPT3, Header } from './contain
 import { CTA, Brand, Navbar } from './components';
 ```
 ## 正式開始編寫我們的第一個React項目！
-
+1. 在App.js中利用先前引用的container搭建出應用程序的初始模板
+```javascript
+const App = () => {
+  return (
+    <div className='App'>
+      <div className='gradient_bg'>
+        <Navbar />
+        <Header />
+      </div>
+      <Brand />
+      <WhatGPT3 />
+      <Features />
+      <Possibility />
+      <CTA />
+      <Blog />
+      <Footer />
+    </div>
+  )
+}
+```
+2. 創建App.css以定全局樣式和index.css用來設定樣式的全局變量
 
 
 
@@ -136,3 +156,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+## 界面設計使用的 Tool List
+* UI/UX設計：https://www.figma.com
+* 漸變顏色：https://angrytools.com/gradient/
+* CSS動畫：https://animista.net
