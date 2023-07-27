@@ -71,8 +71,8 @@ npm install react-icons
             - Navbar.jsx
             - navbar.css
 * cta (call to action)：的中文翻譯為行動呼籲，以字面上的意思來說既是號召、呼籲，以作出某種行動。CTA可以應用在各類網站、EDM或是Banner上以促使使用者達成轉換。舉例來說，當訪客來到你的活動網頁後，你希望他們達成的目標動作。
-* navbar: navigation bar
-    2.1 並在所有component下的.jsx文件中輸入如下代碼：
+* navbar: navigation bar  
+2.1 並在所有component下的.jsx文件中輸入如下代碼：
 ```javascript
 // 這裡以 article 文件夾下的文件為例
 import React from 'react';
@@ -88,9 +88,8 @@ const Article = () => {
 
 export default Article
 ```
+2.2 為components中的組件建立索引文件，在components文件下加入index.js文件並輸入如下編碼：
 
-    2.2 為components中的組件建立索引文件，在components文件下加入index.js文件並輸入如下編碼：
-    
 ``` javascript
 export { default as Article } from './article/Article';
 export { default as Brand } from './brand/Brand';
