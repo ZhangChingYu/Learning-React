@@ -145,6 +145,7 @@ const App = () => {
 ```javascript
 <img src="圖片所在路徑（本地路徑）" alt="要顯示圖片的代替文字"/>
 ```
+
 或者
 ```javascript
 import imgUrl from '圖片路徑（本地路徑）';
@@ -170,17 +171,56 @@ import imgUrl from '圖片路徑（本地路徑）';
 ```
 npm install react-icons
 ```
+
 2. 在需要使用組建的文件中進行import
 ```javascript
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 ```
+
 3. 之後就可以在文件中使用此組件了
 ```javascript
 <RiCloseLine color='' size={} onClick={()=> {}}/>
 <RiMenu3Line color='' size={} onClick={()=> {}}/>
 ```
+
 之後若想使用React的其他庫，也是先用npm安裝好方可使用。
-## 4. 組建獲取傳參
+## 4. 組建獲取傳參 (具體代碼看../containers/features/Features.jsx和../components/feature/Feature.jsx)
+Feature.jsx 接受的參數有title和text並且這兩個參數接收時是以一個object包裝的
+```javascript
+const Feature = ({title, text}) => {
+  return (
+    <div className='gpt3_features-container_feature'>
+      <div className='gpt3_features-container_feature-title'>
+        <div />
+        <h1>{title}</h1>
+      </div>
+      <div className='gpt3_features-container_feature-text'>
+        <p>{text}</p>
+      </div>
+    </div>
+  )
+}
+```
+
+確定了接受的參數後Features.jsx對Feature.jsx進行引用時就可以向<Feature />傳遞參數了。需要注意的是<Feature title={myTitle} text={myText}/>裡面的 title 和 text 的命名需和 Feature = ({title, text}) 中相同，否則傳遞不了。
+```javascript
+import Feature from '../../components/feature/Feature';
+...
+<Feature title={myTitle} text={myText}/>
+...
+```
+
+## 5. useState的使用
+useState（元件狀態管理）是react自帶的hook，談到useState就不得不提另外一種hook：useEffect（副作用處理）。
+1. useState：
+```javascript
+const [state, setState] = useState(initialState);
+```
+state: 是我們打算設置的狀態
+setState: 是更新狀態的方程
+initialState: 是我們未狀態設置的初始值
+
+2. useEffect：
 
 ## 界面設計使用的 Tool List
 * UI/UX設計：https://www.figma.com
