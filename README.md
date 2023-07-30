@@ -140,9 +140,6 @@ const App = () => {
 ```
 2. 創建App.css以定全局樣式和index.css用來設定樣式的全局變量
 3. 逐步編寫每個組件和模塊
-## 最終實現的網頁
-
-
 # 知識點總結
 ## 1. 圖片插入
 ```javascript
@@ -162,3 +159,6 @@ import imgUrl from '圖片路徑（本地路徑）';
 * UI/UX設計：https://www.figma.com
 * 漸變顏色：https://angrytools.com/gradient/
 * CSS動畫：https://animista.net
+
+## 最終實現的網頁
+![Image]()
