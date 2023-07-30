@@ -218,8 +218,19 @@ const [state, setState] = useState(initialState);
 ```
 state: 是我們打算設置的狀態 <br>
 setState: 是更新狀態的方程 <br>
-initialState: 是我們未狀態設置的初始值 <br>
+initialState: 是我們未狀態設置的初始值，也可以不設置初始值，不設置初始值的話直接留空即可。 <br>
+在項目中的具體使用實例在../components/navbar/Navbar.jsx中可以觀察：
+```javascript
+const [toggleMenu, setToggleMenu] = useState(false);
+...
+{ toggleMenu?
+  <RiCloseLine color='#fff' size={27} onClick={()=> setToggleMenu(false)}/>:
+  <RiMenu3Line color='#fff' size={27} onClick={()=> setToggleMenu(true)}/>
+}
+...
+```
 
+可以看到實例中設置了一個名為toggleMenu的狀態，將設置狀態的方程命名為setToggleMenu，並將狀態的初始值設置為false。我們希望通過改變toggleMenu的狀態來控制菜單的開啟和關閉，當toggleMenu的狀態為true時菜單為展開狀態，反之則為收起狀態。
 2. useEffect：
 
 ## 界面設計使用的 Tool List
