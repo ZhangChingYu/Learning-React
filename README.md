@@ -141,7 +141,7 @@ const App = () => {
 2. 創建App.css以定全局樣式和index.css用來設定樣式的全局變量
 3. 逐步編寫每個組件和模塊
 ## 最終實現的網頁
-<!--![image](url)-->
+![image](https://github.com/ZhangChingYu/Learning-React/blob/46816b6b2879fa1423449e93da87a62460f2a8e2/images/ScreenRecord.mp4)
 
 # 知識點總結
 ## 1. 圖片插入
