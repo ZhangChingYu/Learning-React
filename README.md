@@ -221,6 +221,8 @@ const [state, setState] = useState(initialState);
 **initialState:** 是我們未狀態設置的初始值，也可以不設置初始值，不設置初始值的話直接留空即可。 <br>
 在項目中的具體使用實例在../components/navbar/Navbar.jsx中可以觀察：<br>
 ```javascript
+import { useState } from 'react';
+...
 const [toggleMenu, setToggleMenu] = useState(false);
 ...
 { toggleMenu?
@@ -231,10 +233,53 @@ const [toggleMenu, setToggleMenu] = useState(false);
 ```
 
 可以看到實例中設置了一個名為**toggleMenu**的狀態，將設置狀態的方程命名為**setToggleMenu**，並將狀態的初始值設置為**false**。我們希望通過改變**toggleMenu**的狀態來控制菜單的開啟和關閉，當**toggleMenu**的狀態為**true**時菜單為展開狀態，反之則為收起狀態。<br>
-可以看到在組建中我們調用**setToggleMenu()**來改變**toggleMenu**的狀態。
+可以看到在組建中我們調用**setToggleMenu()**來改變**toggleMenu**的狀態。<br>
 2. useEffect：
 ```javascript
 useEffect(callback, array);
+```
+
+**callback:** 是回調函數，用於處理副作用的邏輯 <br>
+一般會在 callback 中返回一個函式，用於清理工作。
+```javascript
+useEffect(() => {
+  // 副作用處理
+  return () => {
+    // 清理工作，類似於 componentWillUnmount
+  }
+})
+```
+
+**array:** (optional)用於控制與執行 <br>
+它可以用於控制useEffect是否執行，一般分為三種情況： <br>
+1. 如果是空的陣列，則只執行一次 (初次 render 之後)，相當於 componentDidMount。 <br>
+2. 如果陣列內有塞值進去，哪麼useEffect會在該陣列發生改變後執行。<br>
+3. 由於第二個參數陣列可以不填，這個useEffect會在每次畫面渲染時都會執行。 <br>
+示例如下：
+```javascript
+import React, { useState, useEffect } from 'react'
+
+export default () => {
+  const [user, setUser] = useState(null)
+
+  const fetchUser = async () => {
+    const result = await fetch('./user.json').then(response => response.json())
+    setUser(result.user)
+  }
+  
+  useEffect(() => {
+    fetchUser()
+  }, [])
+
+  return (
+    <div>
+      <p>{user && user.name}</p>
+      <button onClick={() => setUser()}>
+        Click me
+      </button>
+    </div>
+  );
+};
 ```
 
 資料獲取、訂閱或手動方式修改 React Component DOM 都可以稱為副作用 (side effect)。useEffect正是用來處理這些副作用的。同時 useEffect也是 componentDidMount，componentDidUpdate和componentWillUnmount這幾個生命週期方法的統一。
