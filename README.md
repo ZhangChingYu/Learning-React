@@ -164,7 +164,7 @@ import imgUrl from '圖片路徑（本地路徑）';
 ## 3. react-icons庫工具的使用
 在本次項目中，在導航欄中有使用到react-icons庫中ri中的組件{RiMenu3Line}和{RiCloseLine}，實現了圖中類似Menu的效果
 ![Image](https://github.com/ZhangChingYu/Learning-React/blob/49b2125ae7f23a97594005ebd14c003233105b0d/images/RI.png)
-<img src="https://github.com/ZhangChingYu/Learning-React/blob/49b2125ae7f23a97594005ebd14c003233105b0d/images/RI.png" height={200px}>
+<img src="https://github.com/ZhangChingYu/Learning-React/blob/49b2125ae7f23a97594005ebd14c003233105b0d/images/RI.png" height="200">
 #### 以下是使用步驟
 1. 安裝react-icons庫：
 在控制台中輸入
