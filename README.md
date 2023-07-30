@@ -152,8 +152,17 @@ import imgUrl from '圖片路徑（本地路徑）';
 <img src={imgUrl} alt="要顯示圖片的代替文字"/>
 ```
 
-## 2. 指定頁面位置跳轉
-
+## 2. 指定頁面位置跳轉 (具體代碼看/src/components/navbar/Navbar.jsx)
+井字號（#）後面對應的是element的id也就是點擊#home的a標籤，會跳轉到頁面中id='home'的組件。
+```javascript
+  <p><a href='#home'>Home</a></p>
+  <p><a href='#wgpt3'>What is GPT3</a></p>
+  <p><a href='#possibility'>Open AI</a></p>
+  <p><a href='#features'>Case Studies</a></p>
+  <p><a href='#blog'>Library</a></p>
+```
+## 3. react-icons庫工具的使用
+在本次項目中，在導航欄中有使用到react-icons庫中ri中的組件{RiMenu3Line}和{RiCloseLine}，實現了
 
 ## 界面設計使用的 Tool List
 * UI/UX設計：https://www.figma.com
