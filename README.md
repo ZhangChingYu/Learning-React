@@ -162,7 +162,25 @@ import imgUrl from '圖片路徑（本地路徑）';
   <p><a href='#blog'>Library</a></p>
 ```
 ## 3. react-icons庫工具的使用
-在本次項目中，在導航欄中有使用到react-icons庫中ri中的組件{RiMenu3Line}和{RiCloseLine}，實現了
+在本次項目中，在導航欄中有使用到react-icons庫中ri中的組件{RiMenu3Line}和{RiCloseLine}，實現了圖中類似Menu的效果
+![Image](https://github.com/ZhangChingYu/Learning-React/blob/49b2125ae7f23a97594005ebd14c003233105b0d/images/RI.png)
+#### 以下是使用步驟
+1. 安裝react-icons庫：
+在控制台中輸入
+```
+npm install react-icons
+```
+2. 在需要使用組建的文件中進行import
+```javascript
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
+```
+3. 之後就可以在文件中使用此組件了
+```javascript
+<RiCloseLine color='' size={} onClick={()=> {}}/>
+<RiMenu3Line color='' size={} onClick={()=> {}}/>
+```
+之後若想使用React的其他庫，也是先用npm安裝好方可使用。
+## 4. 組建獲取傳參
 
 ## 界面設計使用的 Tool List
 * UI/UX設計：https://www.figma.com
