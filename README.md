@@ -161,4 +161,9 @@ import imgUrl from '圖片路徑（本地路徑）';
 * CSS動畫：https://animista.net
 
 ## 最終實現的網頁
-![Image]()
+![Image](https://github.com/ZhangChingYu/Learning-React/blob/e0f194ac6dde264c48b8413f670b11dff179894b/images/header.png)
+![Image](https://github.com/ZhangChingYu/Learning-React/blob/e0f194ac6dde264c48b8413f670b11dff179894b/images/brand.png)
+![Image](https://github.com/ZhangChingYu/Learning-React/blob/e0f194ac6dde264c48b8413f670b11dff179894b/images/case.png)
+![Image](https://github.com/ZhangChingYu/Learning-React/blob/e0f194ac6dde264c48b8413f670b11dff179894b/images/what.png)
+![Image](https://github.com/ZhangChingYu/Learning-React/blob/e0f194ac6dde264c48b8413f670b11dff179894b/images/blog.png)
+![Image](https://github.com/ZhangChingYu/Learning-React/blob/e0f194ac6dde264c48b8413f670b11dff179894b/images/footer.png)
