@@ -216,9 +216,9 @@ useState（元件狀態管理）是react自帶的hook，談到useState就不得�
 ```javascript
 const [state, setState] = useState(initialState);
 ```
-state: 是我們打算設置的狀態
-setState: 是更新狀態的方程
-initialState: 是我們未狀態設置的初始值
+state: 是我們打算設置的狀態 <br>
+setState: 是更新狀態的方程 <br>
+initialState: 是我們未狀態設置的初始值 <br>
 
 2. useEffect：
 
