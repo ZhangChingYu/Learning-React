@@ -202,7 +202,7 @@ const Feature = ({title, text}) => {
 }
 ```
 
-確定了接受的參數後Features.jsx對Feature.jsx進行引用時就可以向<Feature />傳遞參數了。需要注意的是<Feature title={myTitle} text={myText}/>裡面的 title 和 text 的命名需和 Feature = ({title, text}) 中相同，否則傳遞不了。
+確定了接受的參數後Features.jsx對Feature.jsx進行引用時就可以向 Feature />傳遞參數了。需要注意的是**Feature title={myTitle} text={myText}/>**裡面的 **title** 和 **text** 的命名需和 **Feature = ({title, text})** 中相同，否則傳遞不了。
 ```javascript
 import Feature from '../../components/feature/Feature';
 ...
@@ -216,10 +216,10 @@ useState（元件狀態管理）是react自帶的hook，談到useState就不得�
 ```javascript
 const [state, setState] = useState(initialState);
 ```
-state: 是我們打算設置的狀態 <br>
-setState: 是更新狀態的方程 <br>
-initialState: 是我們未狀態設置的初始值，也可以不設置初始值，不設置初始值的話直接留空即可。 <br>
-在項目中的具體使用實例在../components/navbar/Navbar.jsx中可以觀察：
+**state:** 是我們打算設置的狀態 <br>
+**setState:** 是更新狀態的方程 <br>
+**initialState:** 是我們未狀態設置的初始值，也可以不設置初始值，不設置初始值的話直接留空即可。 <br>
+在項目中的具體使用實例在../components/navbar/Navbar.jsx中可以觀察：<br>
 ```javascript
 const [toggleMenu, setToggleMenu] = useState(false);
 ...
@@ -230,9 +230,14 @@ const [toggleMenu, setToggleMenu] = useState(false);
 ...
 ```
 
-可以看到實例中設置了一個名為toggleMenu的狀態，將設置狀態的方程命名為setToggleMenu，並將狀態的初始值設置為false。我們希望通過改變toggleMenu的狀態來控制菜單的開啟和關閉，當toggleMenu的狀態為true時菜單為展開狀態，反之則為收起狀態。
+可以看到實例中設置了一個名為**toggleMenu**的狀態，將設置狀態的方程命名為**setToggleMenu**，並將狀態的初始值設置為**false**。我們希望通過改變**toggleMenu**的狀態來控制菜單的開啟和關閉，當**toggleMenu**的狀態為**true**時菜單為展開狀態，反之則為收起狀態。<br>
+可以看到在組建中我們調用**setToggleMenu()**來改變**toggleMenu**的狀態。
 2. useEffect：
+```javascript
+useEffect(callback, array);
+```
 
+資料獲取、訂閱或手動方式修改 React Component DOM 都可以稱為副作用 (side effect)。useEffect正是用來處理這些副作用的。同時 useEffect也是 componentDidMount，componentDidUpdate和componentWillUnmount這幾個生命週期方法的統一。
 ## 界面設計使用的 Tool List
 * UI/UX設計：https://www.figma.com
 * 漸變顏色：https://angrytools.com/gradient/
