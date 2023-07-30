@@ -140,23 +140,24 @@ const App = () => {
 ```
 2. 創建App.css以定全局樣式和index.css用來設定樣式的全局變量
 3. 逐步編寫每個組件和模塊
+## 最終實現的網頁
+<!--![image](url)-->
+
+# 知識點總結
+## 1. 圖片插入
+```javascript
+<img src="圖片所在路徑（本地路徑）" alt="要顯示圖片的代替文字"/>
+```
+或者
+```javascript
+import imgUrl from '圖片路徑（本地路徑）';
+...
+<img src={imgUrl} alt="要顯示圖片的代替文字"/>
+```
+
+## 2. 指定頁面位置跳轉
 
 
-
-<!--
-**ZhangChingYu/ZhangChingYu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
 ## 界面設計使用的 Tool List
 * UI/UX設計：https://www.figma.com
 * 漸變顏色：https://angrytools.com/gradient/
